@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:cardElevation="@dimen/card_view_top_elevation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layout_header"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryLight"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/diet_plan_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/fragment_summary_diet_plan_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        app:layout_columnSpan="3"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/calories_daily_limit_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/diet_label_calories"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_constraintLeft_toLeftOf="@+id/diet_plan_label"
+                        app:layout_constraintTop_toBottomOf="@+id/diet_plan_label" />
+
+                    <TextView
+                        android:id="@+id/calories_daily_limit_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:maxEms="5"
+                        android:minEms="5"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                        app:layout_constraintTop_toBottomOf="@+id/diet_plan_label"
+                        tools:text="2000 kCal" />
+
+                    <TextView
+                        android:id="@+id/protein_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/fragment_ratio_label_protein"
+                        app:layout_constraintLeft_toLeftOf="@+id/calories_daily_limit_label"
+                        app:layout_constraintTop_toBottomOf="@+id/calories_daily_limit_label" />
+
+                    <TextView
+                        android:id="@+id/protein_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                        app:layout_constraintTop_toTopOf="@+id/protein_label"
+                        tools:text="30%" />
+
+                    <TextView
+                        android:id="@+id/protein_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginRight="1dp"
+                        app:layout_constraintRight_toRightOf="@+id/calories_daily_limit_value"
+                        app:layout_constraintTop_toTopOf="@+id/protein_label"
+                        tools:text="1600g" />
+
+                    <TextView
+                        android:id="@+id/carbo_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/fragment_ratio_label_carbohydrates"
+                        app:layout_constraintLeft_toLeftOf="@+id/calories_daily_limit_label"
+                        app:layout_constraintTop_toBottomOf="@+id/protein_label" />
+
+                    <TextView
+                        android:id="@+id/carbo_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                        app:layout_constraintTop_toTopOf="@+id/carbo_label"
+                        tools:text="35%" />
+
+                    <TextView
+                        android:id="@+id/carbo_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintRight_toRightOf="@+id/protein_weight"
+                        app:layout_constraintTop_toTopOf="@+id/carbo_label"
+                        tools:text="500g" />
+
+                    <TextView
+                        android:id="@+id/fat_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/fragment_ratio_label_fat"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@+id/calories_daily_limit_label"
+                        app:layout_constraintTop_toBottomOf="@+id/carbo_label"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/fat_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                        app:layout_constraintTop_toTopOf="@+id/fat_label"
+                        tools:text="35%" />
+
+                    <TextView
+                        android:id="@+id/fat_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintRight_toRightOf="@+id/carbo_weight"
+                        app:layout_constraintTop_toTopOf="@+id/fat_label"
+                        tools:text="100g" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="152dp"
+                        tools:layout_editor_absoluteX="152dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/meals_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/fragment_summary_meals_list_label"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_header" />
+
+                <TableLayout
+                    android:id="@+id/meals_table"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:divider="?android:attr/dividerHorizontal"
+                    android:dividerPadding="16dp"
+                    android:showDividers="middle"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/meals_label">
+
+
+                </TableLayout>
+
+                <!-- Save button -->
+                <Button
+                    android:id="@+id/save_button"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/diet_save_button_label"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/meals_table"
+                    app:layout_constraintVertical_bias="0.437" />
+
+                <!-- Back button-->
+                <Button
+                    android:id="@+id/back_button"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/diet_back_button_label"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/meals_table"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</layout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="szklimek.diettracker">
+
+    <application
+        android:allowBackup="true"
+        tools:replace="android:icon"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".diet.DietActivity"
+            android:label="@string/diet_activity_label"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".addfood.AddActivity"
+            android:label="@string/add_activity_label"
+            android:parentActivityName=".main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".createeditdish.DishActivity"
+            android:label="@string/new_dish_activity_create_label"
+            android:windowSoftInputMode="adjustPan" />
+
+        <provider
+            android:name=".data.local.database.FoodProvider"
+            android:authorities="szklimek.diettracker.provider" />
+
+        <activity
+            android:name=".browse.BrowseActivity"
+            android:parentActivityName=".main.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="@string/browse_activity_label">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.MainActivity" />
+        </activity>
+        <activity android:name=".Diet"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".Details" />
+    </application>
+
+</manifest>

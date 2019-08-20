@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="@dimen/card_view_item_elevation">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- BaseMeal label -->
+        <TextView
+            android:id="@+id/meal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/fragment_meals_label_meal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- BaseMeal number -->
+        <TextView
+            android:id="@+id/meal_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/meal_label"
+            app:layout_constraintTop_toTopOf="@+id/meal_label"
+            tools:text="9" />
+
+        <!-- Name label -->
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_meals_label_name"
+            app:layout_constraintBottom_toBottomOf="@+id/name_spinner"
+            app:layout_constraintLeft_toLeftOf="@+id/meal_label"
+            app:layout_constraintTop_toTopOf="@+id/name_spinner" />
+
+        <!-- BaseMeal name EditText-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/name_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/calories_seekbar"
+            app:layout_constraintRight_toLeftOf="@+id/name_spinner"
+            app:layout_constraintTop_toTopOf="@+id/name_spinner"
+            app:layout_constraintVertical_bias="0.6">
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- BaseMeal name Spinner -->
+        <Spinner
+            android:id="@+id/name_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/meal_names_spinner"
+            android:spinnerMode="dropdown"
+            app:layout_constraintLeft_toLeftOf="@+id/calories_seekbar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_label"
+            android:layout_marginStart="8dp" />
+
+        <!-- Calories label -->
+        <TextView
+            android:id="@+id/calories_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diet_label_calories"
+            app:layout_constraintBottom_toBottomOf="@+id/calories_seekbar"
+            app:layout_constraintLeft_toLeftOf="@+id/name_label"
+            app:layout_constraintTop_toTopOf="@+id/calories_seekbar" />
+
+        <!-- Calories SeekBar -->
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/calories_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/calories_label"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_spinner"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Calories value TextView -->
+        <TextView
+            android:id="@+id/calories_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:maxEms="5"
+            android:minEms="5"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintLeft_toRightOf="@+id/calories_percent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calories_seekbar"
+            tools:text="10000 kCal" />
+
+        <TextView
+            android:id="@+id/calories_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintLeft_toLeftOf="@+id/calories_label"
+            app:layout_constraintRight_toRightOf="@+id/calories_seekbar"
+            app:layout_constraintTop_toBottomOf="@+id/calories_seekbar"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="25%"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

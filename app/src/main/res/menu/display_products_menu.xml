@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="never"
+        android:title="Restore database"
+        android:id="@+id/menu_restore"/>
+    <item
+        android:icon="@mipmap/ic_launcher_round"
+        app:showAsAction="never"
+        android:title="Delete database"
+        android:id="@+id/menu_delete"/>
+
+
+</menu>

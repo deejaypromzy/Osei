@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_group_general"
+        android:checkableBehavior="single">
+    <!-- Daily plan -->
+    <item
+        android:id="@+id/menu_daily_plan"
+        android:icon="@drawable/ic_today_black_24dp"
+        android:title="@string/menu_daily_plan"
+        android:checkable="true"/>
+
+    <!-- Reports -->
+    <item
+        android:id="@+id/menu_reports"
+        android:icon="@drawable/ic_assessment_black_24dp"
+        android:title="@string/menu_reports"
+        android:checkable="true"/>
+
+    <!-- Nutrients counter -->
+    <item
+        android:id="@+id/menu_counter"
+        android:icon="@drawable/ic_calculator_black_24dp"
+        android:title="@string/menu_nutrients_counter" />
+
+    <!-- Browse food -->
+    <item
+        android:id="@+id/menu_browse_food"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/menu_browse_food" />
+
+    <!-- Change plan -->
+    <item
+        android:id="@+id/menu_change_plan"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:title="@string/menu_change_plan" />
+    </group>
+    <group
+        android:id="@+id/menu_group_settings">
+        <!-- Settings -->
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/menu_settings" />
+
+        <!-- Help -->
+        <item
+            android:id="@+id/menu_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/menu_help" />
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/game"
+            android:icon="@drawable/game"
+            android:title="Game" />
+        <item
+            android:id="@+id/setup"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logoff"
+            android:title="Logout" />
+        <!-- Feedback -->
+        <item
+            android:id="@+id/menu_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="@string/menu_feedback" />
+    </group>
+
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!-- Calories limit -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/calories_input_layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/calories_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fragment_general_hint_calories"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/nr_picker" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Meals number -->
+        <TextView
+            android:id="@+id/meals_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_general_label_meals"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:layout_constraintBottom_toTopOf="@+id/nr_picker"
+            app:layout_constraintLeft_toLeftOf="@+id/calories_input_layout"
+            app:layout_constraintTop_toBottomOf="@+id/nr_picker" />
+
+        <NumberPicker
+            android:id="@+id/nr_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:focusable="true"
+            app:layout_constraintRight_toRightOf="@+id/calories_input_layout"
+            app:layout_constraintTop_toBottomOf="@+id/calories_input_layout" />
+
+        <!-- Next button -->
+        <Button
+            android:id="@+id/next_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="16dp"
+            android:focusable="true"
+            android:nextFocusForward="@+id/next_button"
+            android:nextFocusRight="@+id/next_button"
+            android:text="@string/diet_next_button_label"
+            app:layout_constraintRight_toRightOf="@+id/calories_input_layout"
+            app:layout_constraintTop_toBottomOf="@+id/nr_picker" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

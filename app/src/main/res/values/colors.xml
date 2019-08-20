@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0088ff</color>
+    <color name="colorPrimaryDark">#368eff</color>
+    <color name="colorAccent">#368eff</color>
+    <color name="colorLight">#E8EAF6</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="tabTextColor">#BDBDBD</color>
+    <color name="tabSelectedTextColor">#FFFFFF</color>
+
+    <color name="colorRed700">#d32f2f</color>
+    <color name="colorPink700">#c2185b</color>
+    <color name="colorPurple700">#7b1fa2</color>
+    <color name="colorDeepPurple700">#512da8</color>
+    <color name="colorGreen700">#388e3c</color>
+    <color name="colorDeepOrange700">#e64a19</color>
+</resources>

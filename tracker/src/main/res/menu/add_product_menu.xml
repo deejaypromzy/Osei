@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="ifRoom"
+        android:title="@string/new_dish_activity_cancel"
+        android:id="@+id/menu_cancel"
+        android:icon="@drawable/ic_close_white_24dp"/>
+    <item
+        android:icon="@drawable/ic_check_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/new_dish_activity_save"
+        android:id="@+id/menu_save"/>
+</menu>

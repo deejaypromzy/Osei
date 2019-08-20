@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/nutrient_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        tools:text="Energy"
+        android:layout_marginStart="8dp" />
+
+    <CheckBox
+        android:id="@+id/min_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/browse_menu_min_value_label"
+        app:layout_constraintLeft_toLeftOf="@+id/nutrient_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/nutrient_checkbox"
+        app:layout_constraintRight_toLeftOf="@+id/max_edit_text"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="0dp" />
+
+    <CheckBox
+        android:id="@+id/max_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/browse_menu_max_value_label"
+        app:layout_constraintLeft_toLeftOf="@+id/min_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/min_checkbox"
+        android:layout_marginStart="0dp" />
+
+    <EditText
+        android:id="@+id/max_edit_text"
+        style="@style/NumbersInputStyle"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/max_checkbox"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/max_checkbox"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/max_checkbox"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/min_edit_text"
+        style="@style/NumbersInputStyle"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintTop_toTopOf="@+id/min_checkbox"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/min_checkbox"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/max_edit_text"
+        android:layout_marginStart="0dp" />
+
+
+
+    <TextView
+        android:id="@+id/nutrient_per_100g_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:textAppearance="?android:attr/textAppearance"
+        app:layout_constraintBottom_toBottomOf="@+id/nutrient_checkbox"
+        app:layout_constraintLeft_toRightOf="@+id/nutrient_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/nutrient_checkbox"
+        android:layout_marginStart="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>

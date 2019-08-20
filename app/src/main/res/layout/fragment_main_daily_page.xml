@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diet_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="@dimen/card_view_item_elevation"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/nutrients_pie_chart"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/macronutrients_ratio_pie_chart_height"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fat_progress" />
+
+                    <!-- Date -->
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="20.08.2017" />
+
+                    <!-- Calories label and value -->
+                    <ProgressBar
+                        android:id="@+id/calories_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/calories_label" />
+
+                    <TextView
+                        android:id="@+id/calories_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintLeft_toLeftOf="@+id/calories_progress"
+                        app:layout_constraintRight_toRightOf="@+id/calories_progress"
+                        app:layout_constraintTop_toTopOf="@+id/calories_label"
+                        tools:text="35%" />
+
+                    <TextView
+                        android:id="@+id/calories_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/main_daily_calories_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+                    <TextView
+                        android:id="@+id/calories_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/date"
+                        tools:text="1200/3000 kcal" />
+
+                    <!-- Protein label and values-->
+                    <TextView
+                        android:id="@+id/protein_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/main_daily_protein_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintLeft_toLeftOf="@+id/protein_progress"
+                        app:layout_constraintTop_toBottomOf="@+id/calories_progress" />
+
+                    <ProgressBar
+                        android:id="@+id/protein_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="0dp"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/protein_value" />
+
+                    <!-- Carbs label and values-->
+                    <TextView
+                        android:id="@+id/protein_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="end"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintRight_toRightOf="@+id/protein_progress"
+                        app:layout_constraintTop_toTopOf="@+id/protein_label"
+                        tools:text="112 / 186 g" />
+
+                    <TextView
+                        android:id="@+id/protein_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintLeft_toLeftOf="@+id/protein_progress"
+                        app:layout_constraintRight_toRightOf="@+id/protein_progress"
+                        app:layout_constraintTop_toTopOf="@+id/protein_label"
+                        tools:text="35%" />
+
+                    <TextView
+                        android:id="@+id/carbs_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/main_daily_carbs_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintLeft_toLeftOf="@+id/protein_progress"
+                        app:layout_constraintTop_toBottomOf="@+id/protein_progress" />
+
+                    <ProgressBar
+                        android:id="@+id/carbs_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintLeft_toLeftOf="@+id/protein_progress"
+                        app:layout_constraintRight_toRightOf="@+id/protein_progress"
+                        app:layout_constraintTop_toBottomOf="@+id/carbs_label" />
+
+                    <TextView
+                        android:id="@+id/carbs_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="end"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintRight_toRightOf="@+id/protein_progress"
+                        app:layout_constraintTop_toTopOf="@+id/carbs_label"
+                        tools:text="114 / 186 g" />
+
+                    <!-- Fat label and values-->
+                    <TextView
+                        android:id="@+id/carbs_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintLeft_toLeftOf="@+id/carbs_progress"
+                        app:layout_constraintRight_toRightOf="@+id/carbs_progress"
+                        app:layout_constraintTop_toTopOf="@+id/carbs_label"
+                        tools:text="35%" />
+
+                    <TextView
+                        android:id="@+id/fat_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/main_daily_fat_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintLeft_toLeftOf="@+id/carbs_progress"
+                        app:layout_constraintTop_toBottomOf="@+id/carbs_progress" />
+
+                    <ProgressBar
+                        android:id="@+id/fat_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="@+id/carbs_progress"
+                        app:layout_constraintRight_toRightOf="@+id/fat_value"
+                        app:layout_constraintTop_toBottomOf="@+id/fat_label" />
+
+                    <TextView
+                        android:id="@+id/fat_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="end"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="@+id/carbs_value"
+                        app:layout_constraintRight_toRightOf="@+id/carbs_progress"
+                        app:layout_constraintTop_toTopOf="@+id/fat_label"
+                        tools:text="24 / 38 g" />
+
+                    <TextView
+                        android:id="@+id/fat_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        app:layout_constraintBottom_toTopOf="@+id/fat_progress"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintLeft_toLeftOf="@+id/fat_progress"
+                        app:layout_constraintRight_toRightOf="@+id/fat_progress"
+                        app:layout_constraintTop_toTopOf="@+id/fat_label"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:text="35%" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/meals_recycler_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/diet_card"
+                app:layout_constraintRight_toRightOf="@+id/diet_card"
+                app:layout_constraintTop_toBottomOf="@+id/diet_card" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>

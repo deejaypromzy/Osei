@@ -1,0 +1,346 @@
+<resources>
+    <string name="app_name">Health Diets</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="ChildTitles">
+        <item>Carbohydrate</item>
+        <item>Protein</item>
+        <item>Fats and Oil</item>
+        <item>Vitamins</item>
+
+    </string-array>
+    <string-array name="ChildInfo">
+        <item>
+            <![CDATA[
+
+Just like your car needs fuel to make it run, your body needs fuel to make it go. Of course, your body doesn\'t run on gasoline - it runs on carbohydrates. Carbohydrates, found in foods like grains, fruits, beans, milk products and vegetables, are by far your body\'s favorite source of energy, yet providing your body with pep is not the only role carbs play. In this lesson, we will take a look at the functions of carbohydrates as well as what happens when you don\'t get enough carbs in your diet.
+
+            ]]>
+        </item>
+        <item>
+            <![CDATA[
+
+Protein is kind of like the backup generator when the primary energy source goes out. It\'s great that the body has this backup system in place, yet when proteins are used up for energy, they are no longer available to do their life-sustaining jobs, like helping with muscle contractions and maintaining muscle and other body tissues
+
+            ]]>
+        </item>
+
+        <item>
+
+            <![CDATA[
+
+Fats are the main source of energy for satisfactory growth and physical activity during early infancy. This energy requirement is not easily met where diets are low in fat (less than 15 percent of total calories), which partly explains the high prevalence of malnutrition in such areas.
+ ]]>
+        </item>
+        <item>
+        <![CDATA[
+
+
+Vitamins and minerals are essential nutrients because they perform hundreds of roles in the body. There is a fine line between getting enough of these nutrients (which is healthy) and getting too much (which can end up harming you). Eating a healthy diet remains the best way to get sufficient amounts of the vitamins and minerals you need.
+
+        ]]>
+        </item>
+    </string-array>
+    <array name="ChildDetail">
+        <item><![CDATA[
+
+After you enjoy a meal, the carbohydrates from the foods you consumed are broken down into smaller units of sugar. These small units get absorbed out of your digestive tract and into your bloodstream. This blood sugar, or blood glucose, is transported through your bloodstream to supply energy to your muscles and other tissues. This is an important process; in fact, we could say that of the different functions of carbohydrates, supplying energy to the body is the main role.
+
+Most of your body cells use the simple carbohydrate glucose for energy, but your brain is particularly in need of glucose as an energy source. So, we can add that an important function of carbs is supplying energy to the brain. If you have ever gone on a low-carb diet and felt like your brain was foggy for a few days, then you experienced just how important carbohydrates are to proper brain function.
+
+Another function of carbohydrates is to prevent the breakdown of proteins for energy. By consuming sufficient amounts of carbohydrates in your diet, you ensure that your body can meet its energy needs, but if your intake of carbs is too low, or you are using them up too quickly, such as during intense exercise, then your body is forced to break down proteins for energy.
+
+Protein is kind of like the backup generator when the primary energy source goes out. It\'s great that the body has this backup system in place, yet when proteins are used up for energy, they are no longer available to do their life-sustaining jobs, like helping with muscle contractions and maintaining muscle and other body tissues.
+        ]]></item>
+
+        <item><![CDATA[ The Power of Protein
+It\'s easy to understand the excitement. Protein is an important component of every cell in the body. Hair and nails are mostly made of protein. Your body uses protein to build and repair tissues. You also use protein to make enzymes, hormones, and other body chemicals. Protein is an important building block of bones, muscles, cartilage, skin, and blood.
+
+Along with fat and carbohydrates, protein is a "macronutrient," meaning that the body needs relatively large amounts of it. Vitamins and minerals, which are needed in only small quantities, are called "micronutrients." But unlike fat and carbohydrates, the body does not store protein, and therefore has no reservoir to draw on when it needs a new supply. ]]></item>
+
+        <item>
+            <![CDATA[
+
+Fats are the main source of energy for satisfactory growth and physical activity during early infancy. This energy requirement is not easily met where diets are low in fat (less than 15 percent of total calories), which partly explains the high prevalence of malnutrition in such areas.
+
+Fats should also be considered in terms of their structural function during the first two years of life. They provide the fatty acids and cholesterol needed to form cell membranes in all the organs. Moreover, important organs such as the retina and the central nervous system are mainly composed of fats.
+
+Most of the fats needed to form these tissues are essential fatty acids (EFAs) which cannot be synthesized by the organism and have to be acquired through nutrition. Mother\'s milk has a special fat composition that makes it unique for good child nutrition. It contains factors that facilitate the digestion of fats, while its chemical composition makes it more digestible and includes a balanced supply of n-6 and n-3 fatty acids.
+
+Recent documented research on n-3 a -linolenic acid and docosahexaenoic acid (DHA) has focused on effects on growth and brain development. In 1993, the Joint FAO/WHO Expert Consultation on Fats and Oils in Human Nutrition stressed that infants should be breast-fed if possible and that breast-milk substitutes (infant formula) should mimic breast milk in faty acid content.
+
+There is a relationship between consumption of fats and income level in developing countries. Fat consumption is insufficient in low-income groups, and this lower consumption of fats and oils has an adverse effect on the nutritional energy status of children and adults in these groups.
+            ]]>
+        </item>
+
+
+        <item>
+            <![CDATA[
+           Vitamins allow your body to grow and develop. They also play important roles in bodily functions such as metabolism, immunity and digestion. There are 13 essential vitamins, including vitamins A, C, D, E, and K and B vitamins such as riboflavin and folate. According to the U.S. National Library of Medicine, the best way to meet your vitamin needs is to eat a balanced diet containing a variety of foods. If you can\'t meet your needs through food alone, you may require dietary supplements. Seek guidance from your doctor or dietitian before taking supplements            ]]>
+
+        </item>
+    </array>
+    <array name="ChildNews">
+        <item>The Importance of Carbohydrates: Functions &amp; Impact of Deficiency</item>
+        <item>Beef up your knowledge of protein and good dietary sources.</item>
+        <item>Importance of fats and oils for child growth and development
+        </item>
+        <item>The Importance of Vitamins To Your Body</item>
+    </array>
+    <array name="ChildCareImage">
+        <item>@drawable/carbohydrate</item>
+        <item>@drawable/protein</item>
+        <item>@drawable/fats</item>
+        <item>@drawable/vitamins</item>
+    </array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Display product activity label -->
+    <string name="display_product_label">Products</string>
+
+    <!-- Units display formats -->
+    <string name="unit_format_calories_int">%1$d kCal</string>
+    <string name="unit_format_calories_per_100g">%1$.0f kCal / 100g</string>
+    <string name="unit_format_percent">%1d %%</string>
+    <string name="unit_format_weight_g">%1$d g</string>
+    <string name="unit_format_weight_floating_g">%1$.1f g</string>
+    <string name="unit_format_weight_per_weight_g">%1$d/%2$d g</string>
+    <string name="unit_format_weight_g_per_100g">%1$d g / 100g</string>
+    <string name="unit_format_weight_floating_g_per_100g">%1$.1f g / 100g</string>
+    <string name="unit_format_calories">%1$.0f kCal</string>
+    <string name="unit_format_calories_per_calories">%1$d/%2$d kCal</string>
+
+    <!-- Nav drawer opening and closing messages -->
+    <string name="nav_drawer_open_message">Open menu</string>
+    <string name="nav_drawer_close_message">Close menu</string>
+
+    <!-- Add activity labels -->
+    <string name="add_activity_label">Add</string>
+    <string name="add_menu_dish_label">Add dish</string>
+    <string name="add_menu_product_label">Add product</string>
+    <string name="empty_text">Get started by creating your favourite dishes</string>
+    <string name="table_details_product">Products</string>
+    <string name="table_details_weight">Weight</string>
+    <string name="table_details_energy">Energy</string>
+    <string name="table_details_protein_label">Protein</string>
+    <string name="table_details_carbo_label">Carbohydrates</string>
+    <string name="table_details_fat_label">Fat</string>
+    <string name="snackbar_undo">Undo</string>
+    <string name="snackbar_deleted">Dish deleted</string>
+
+    <!-- Add activity menu labels -->
+    <string name="add_menu_recently_added">Recently added</string>
+
+    <!-- Add dialogs labels -->
+    <string name="add_dialog_amount_label">Weight</string>
+    <string name="add_dialog_button_save_label">Save</string>
+    <string name="add_dialog_button_add_label">Add</string>
+    <string name="add_dialog_button_delete_label">Delete</string>
+    <string name="add_dialog_button_cancel_label">Cancel</string>
+    <string name="add_dialog_title">Select weight</string>
+
+    <!-- Labels in browse activity -->
+    <string name="browse_activity_label">Browse products</string>
+    <string name="browse_search_hint">Search</string>
+    <string name="browse_menu_category_label">Category</string>
+    <string name="browse_menu_nutrients_label">Nutrients values</string>
+    <string name="browse_menu_nutrient_per_100g">%1$s per 100g</string>
+    <string name="browse_menu_min_value_label">Minimum value</string>
+    <string name="browse_menu_max_value_label">Maximum value</string>
+    <string name="browse_details_nutrients_label">Nutrients values</string>
+    <string name="browse_details_nutrient_label">Nutrient</string>
+    <string name="browse_details_nutrients_per_100g_label">in 100g</string>
+
+    <!-- New dish activity labels -->
+    <string name="new_dish_activity_create_label">Create new dish</string>
+    <string name="new_dish_activity_edit_label">Edit dish</string>
+    <string name="new_dish_activity_hint_name">Name</string>
+    <string name="new_dish_activity_hint_type">Dish type</string>
+    <string name="new_dish_activity_hint_description">Description (optional)</string>
+    <string name="new_dish_activity_error_name">Name is required</string>
+    <string name="new_dish_activity_error_type">Dish type is required</string>
+    <string name="new_dish_activity_products_label">Products</string>
+    <string name="new_dish_activity_save">Save</string>
+    <string name="new_dish_activity_cancel">Cancel</string>
+    <string name="new_dish_success_toast">%1$s saved.</string>
+    <string name="new_dish_products_empty_toast">Dish should contain at least 2 products</string>
+    <string name="new_dish_update_error">Error occurred during updating dish</string>
+    <string name="new_dish_dish_weight_label">Weight:</string>
+    <string name="new_dish_dish_energy_label">Energy:</string>
+    <string name="new_dish_products_empty_text">Get started by adding products</string>
+
+    <!-- Labels in DiscardChangesFragmentDialog -->
+    <string name="back_alert_message">Discard your changes and quit editing?</string>
+    <string name="back_alert_positive_button">Keep editing</string>
+    <string name="back_alert_negative_button">Discard</string>
+
+    <!-- Food types -->
+    <string name="food_type_dish">Dish</string>
+    <string name="food_type_product">Product</string>
+
+
+    <!-- Dish types -->
+    <string name="new_dish_type_1">Type 1</string>
+    <string name="new_dish_type_2">Type 2</string>
+    <string name="new_dish_type_3">Type 3</string>
+    <string name="new_dish_type_4">Type 4</string>
+    <string name="new_dish_type_5">Type 5</string>
+    <string name="new_dish_type_6">Type 6</string>
+    <string name="new_dish_type_7">Type 7</string>
+
+    <!-- Product types -->
+    <string name="product_type_all">All</string>
+    <string name="product_type_1">Type 1</string>
+    <string name="product_type_2">Type 2</string>
+    <string name="product_type_3">Type 3</string>
+    <string name="product_type_4">Type 4</string>
+    <string name="product_type_5">Type 5</string>
+    <string name="product_type_6">Type 6</string>
+    <string name="product_type_7">Type 7</string>
+    <string name="product_type_8">Type 8</string>
+    <string name="product_type_9">Type 9</string>
+    <string name="product_type_10">Type 10</string>
+    <string name="product_type_11">Type 11</string>
+    <string name="product_type_12">Type 12</string>
+    <string name="product_type_13">Type 13</string>
+    <string name="product_type_14">Type 14</string>
+    <string name="product_type_15">Type 15</string>
+    <string name="product_type_16">Type 16</string>
+    <string name="product_type_17">Type 17</string>
+
+    <!-- Nutrients names -->
+    <string name="nutrient_energy">Energy</string>
+    <string name="nutrient_protein">Protein</string>
+    <string name="nutrient_carbohydrates">Carbs</string>
+    <string name="nutrient_fat">Fat</string>
+    <string name="nutrient_water">Water</string>
+    <string name="nutrient_fiber">Fiber</string>
+    <string name="nutrient_calcium">Calcium</string>
+    <string name="nutrient_magnesium">Magnesium</string>
+    <string name="nutrient_phosphorus">Phosphorus</string>
+    <string name="nutrient_potassium">Potassium</string>
+    <string name="nutrient_zinc">Zinc</string>
+    <string name="nutrient_sodium">Sodium</string>
+    <string name="nutrient_iron">Iron</string>
+
+    <!-- Search feature labels -->
+    <string name="products_search_hint">Search products</string>
+
+    <!-- Labels in MainActivity -->
+    <string name="main_objective">Objective</string>
+    <string name="main_date">Date</string>
+    <string name="main_daily_calories_label">Calories total</string>
+    <string name="main_daily_protein_label">Protein</string>
+    <string name="main_daily_carbs_label">Carbs</string>
+    <string name="main_daily_fat_label">Fat</string>
+    <string name="main_daily_button_add_food_label">Add food</string>
+    <string name="main_daily_button_details_label">Details</string>
+    <string name="main_daily_macronutrients_ratio_label">Macronutrients ratio</string>
+
+    <string name="main_details_food_label">Added food</string>
+    <string name="main_details_table_name">Name</string>
+    <string name="main_details_table_type">Type</string>
+    <string name="main_details_table_energy">Energy</string>
+    <string name="main_details_table_weight">Weight</string>
+    <string name="main_details_nutrients_label">Added food</string>
+    <string name="main_details_table_nutrient_name">Nutrient</string>
+    <string name="main_details_table_nutrient_value">Value</string>
+    <string name="main_details_table_nutrient_unit">Unit</string>
+
+    <!-- Labels in diet activity -->
+    <string name="diet_activity_label">Set your objective</string>
+    <string name="diet_general_tab_label">General</string>
+    <string name="diet_ratio_tab_label">Ratio</string>
+    <string name="diet_meals_tab_label">Meals</string>
+    <string name="diet_time_tab_label">Schedule</string>
+    <string name="diet_next_button_label">Next</string>
+    <string name="diet_back_button_label">Back</string>
+    <string name="diet_save_button_label">Save</string>
+    <string name="diet_label_calories">Calories</string>
+    <string name="diet_error_daily_calories_not_full">Fill all calories among meals</string>
+    <string name="diet_error_zero_calories_percent">Set daily calories percentage in every meal</string>
+    <string name="diet_error_ratio_not_full">Fill all calories ratio</string>
+    <string name="diet_error_no_custom_name">Give a name to all meals</string>
+
+    <string name="diet_plan_saved_toast">Diet plan saved. Good luck!</string>
+
+    <!-- Labels in diet general fragment -->
+    <string name="fragment_general_label_meals">Meals per day</string>
+    <string name="fragment_general_hint_calories">Calories limit</string>
+    <string name="fragment_general_error_calories">Daily calories limit should be more than 500 kCal</string>
+
+    <!-- Labels in diet ratio fragment -->
+    <string name="fragment_ratio_weight_label">Total weight</string>
+    <string name="fragment_ratio_label_protein">Protein</string>
+    <string name="fragment_ratio_label_carbohydrates">Carbohydrates</string>
+    <string name="fragment_ratio_label_fat">Fat</string>
+    <string name="fragment_ratio_calories_format">%1$d/%2$d kCal</string>
+    <string name="fragment_ratio_percent_sum_label">Overall sum</string>
+
+    <!-- Labels in diet meals fragment -->
+    <string name="fragment_meals_label_meal">Meal</string>
+    <string name="fragment_meals_label_name">Name</string>
+    <string name="fragment_meals_name_error">Meal name is required</string>
+
+    <!-- Labels in diet time fragment -->
+    <string name="fragment_time_label_time">Time</string>
+    <!-- Labels in diet summary fragment -->
+    <string name="fragment_summary_diet_plan_label">Diet plan</string>
+    <string name="fragment_summary_meals_list_label">Meals</string>
+
+    <!-- Common types of meals to choose by the user in meals fragment -->
+    <string name="meal_name_breakfast">Breakfast</string>
+    <string name="meal_name_nd_breakfast">2nd breakfast</string>
+    <string name="meal_name_lunch">Lunch</string>
+    <string name="meal_name_dinner">Dinner</string>
+    <string name="meal_name_supper">Supper</string>
+    <string name="meal_name_snack">Snack</string>
+    <string name="meal_name_brunch">Brunch</string>
+    <string name="meal_name_cheat_meal">Cheat meal</string>
+    <string name="meal_name_other">Other</string>
+
+    <!-- Shared preferences keys and labels -->
+    <!-- Preferences connected with objective -->
+    <string name="sh_pref_user_diet_file_key" translatable="false">diet</string>
+
+    <!-- General user preferences -->
+    <string name="sh_pref_user_preferences_file_key" translatable="false">preferences</string>
+
+    <!-- Labels in menus -->
+    <string name="menu_daily_plan">Daily plan</string>
+    <string name="menu_reports">Reports</string>
+    <string name="menu_nutrients_counter">Nutrients counter</string>
+    <string name="menu_browse_food">Browse food</string>
+    <string name="menu_change_plan">Change plan</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_feedback">Send feedback</string>
+
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_add">Add</string>
+
+    <string name="date_format_today">Today</string>
+
+    <string name="time_format_moment_ago">Moment ago</string>
+    <string name="time_format_minutes_ago">%1$d min ago</string>
+    <string name="time_format_hour_ago">%1$d h ago</string>
+
+    <string name="error_time_after">Set time minimum 15 minutes after previous meal</string>
+    <string name="error_time_before">Set time minimum 15 minutes before next meal</string>
+
+</resources>

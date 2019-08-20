@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="meal_names_spinner">
+        <item>@string/meal_name_breakfast</item>
+        <item>@string/meal_name_nd_breakfast</item>
+        <item>@string/meal_name_lunch</item>
+        <item>@string/meal_name_dinner</item>
+        <item>@string/meal_name_supper</item>
+        <item>@string/meal_name_snack</item>
+        <item>@string/meal_name_brunch</item>
+        <item>@string/meal_name_cheat_meal</item>
+        <item>@string/meal_name_other</item>
+    </string-array>
+
+    <string-array name="dish_types">
+        <item>@string/new_dish_type_1</item>
+        <item>@string/new_dish_type_2</item>
+        <item>@string/new_dish_type_3</item>
+        <item>@string/new_dish_type_4</item>
+        <item>@string/new_dish_type_5</item>
+        <item>@string/new_dish_type_6</item>
+        <item>@string/new_dish_type_7</item>
+    </string-array>
+
+    <string-array name="product_types">
+        <item>@string/product_type_all</item>
+        <item>@string/product_type_1</item>
+        <item>@string/product_type_2</item>
+        <item>@string/product_type_3</item>
+        <item>@string/product_type_4</item>
+        <item>@string/product_type_5</item>
+        <item>@string/product_type_6</item>
+        <item>@string/product_type_7</item>
+        <item>@string/product_type_8</item>
+        <item>@string/product_type_9</item>
+        <item>@string/product_type_10</item>
+        <item>@string/product_type_11</item>
+        <item>@string/product_type_12</item>
+        <item>@string/product_type_13</item>
+        <item>@string/product_type_14</item>
+        <item>@string/product_type_15</item>
+        <item>@string/product_type_16</item>
+        <item>@string/product_type_17</item>
+
+    </string-array>
+
+    <string-array name="nutrients">
+        <item>@string/nutrient_energy</item>
+        <item>@string/nutrient_protein</item>
+        <item>@string/nutrient_carbohydrates</item>
+        <item>@string/nutrient_fat</item>
+        <item>@string/nutrient_water</item>
+        <item>@string/nutrient_fiber</item>
+        <item>@string/nutrient_calcium</item>
+        <item>@string/nutrient_magnesium</item>
+        <item>@string/nutrient_phosphorus</item>
+        <item>@string/nutrient_potassium</item>
+        <item>@string/nutrient_zinc</item>
+        <item>@string/nutrient_sodium</item>
+        <item>@string/nutrient_iron</item>
+    </string-array>
+
+</resources>
